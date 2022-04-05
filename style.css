@@ -1,3 +1,78 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(./media/basic-pics/modern-architecture-3867428_960_720.jpg)
+    no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
 
+/**************************** Zone du bouton */
+.box {
+  display: inline-block;
+  margin-top: 10rem;
+  background-color: rgba(215, 215, 250, 0.082);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.button {
+  padding: 1rem 30px;
+  background-color: rgba(0, 102, 255, 0.192);
+  font-size: 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: antiquewhite;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: rgba(35, 50, 73, 0.89);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  right: 0;
+  background-color: rgba(49, 67, 95, 0.424);
+  transition: 0.3s;
+  visibility: hidden;
+}
+#popup:target {
+  visibility: visible;
+  background-color: rgba(49, 67, 95, 0.534);
+}
+.popup {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  margin-top: 10rem;
+  width: 50%;
+  background-color: antiquewhite;
+}
+.popup p {
+  margin-top: 10px;
+  text-align: justify;
+}
 
+.popup a {
+  position: absolute;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  top: 5px;
+  right: 1rem;
+  padding: 1px 5px;
+  /* border: gray solid 1px; */
+  border-radius: 5px;
+  background-color: rgb(209, 207, 207);
+  transition: 0.3s;
+}
+.popup a:hover {
+  background-color: rgb(107, 105, 105);
+  color: aliceblue;
+}
 /*# sourceMappingURL=style.css.map */
